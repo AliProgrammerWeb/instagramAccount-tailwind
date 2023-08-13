@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    .small{
+       @apply text-[12px] ml-2  cursor-pointer
+    }
+    .label{
+        @apply w-20 text-right flex items-center justify-end
+    }
+    .input{
+        @apply border border-gray-300 rounded-sm w-full h-8 placeholder:text-xs placeholder:pl-2 placeholder:pb-1
+    }
+    .footer-link{
+        @apply p-[0.7em] hover:underline decoration-blue-900
+    }
+    .sm-span{
+      @apply  text-xs ml-3
+    }
+    .div-aside{
+        @apply py-2 px-1 cursor-pointer hover:bg-slate-200 hover:rounded-md w-full
+    }
+    .respon-sideleft{
+        @apply smm:hidden sm:hidden md:hidden lg:block xl:block 2xl:block
+      }
+    .respon-sideright{
+        @apply smm:w-full sm:w-full md:w-full lg:w-full xl:block 2xl:block
+      }
+      .respon-sideleft-inside{
+        @apply smm:hidden sm:hidden md:hidden lg:hidden xl:inline-block 2xl:inline-block
+      }
+      .respon-header{
+        @apply smm:block sm:block md:block lg:hidden xl:hidden 2xl:hidden
+      }
+      .respon-div-aside{
+        @apply py-2 px-1 cursor-pointer w-full text-center
+    }
+    .respon-footer{
+        @apply smm:block sm:block md:block lg:hidden xl:hidden 2xl:hidden
+    }
+    .respon-sideright-footer{
+        @apply smm:hidden sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden
+    }
+}
